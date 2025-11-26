@@ -16,23 +16,6 @@ public class UsersMicroserviceApplication {
 	@Autowired
 	UserService userService;
 
-	/*@PostConstruct
-	void init_users() {
-		// Add roles
-		userService.addRole(new Role(null, "ADMIN"));
-		userService.addRole(new Role(null, "USER"));
-
-		// Add users
-		userService.saveUser(new User(null, "admin", "123", true, null));
-		userService.saveUser(new User(null, "rihem", "123", true, null));
-		userService.saveUser(new User(null, "chaima", "123", true, null));
-
-		// Assign roles to users
-		userService.addRoleToUser("admin", "ADMIN");
-		userService.addRoleToUser("admin", "USER");
-		userService.addRoleToUser("rihem", "USER");
-		userService.addRoleToUser("chaima", "USER");
-	}*/
 
 	public static void main(String[] args) {
 		SpringApplication.run(UsersMicroserviceApplication.class, args);
