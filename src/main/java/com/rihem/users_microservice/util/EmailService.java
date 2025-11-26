@@ -7,6 +7,7 @@ import jakarta.mail.MessagingException;
 import jakarta.mail.internet.MimeMessage;
 import lombok.AllArgsConstructor;
 
+@Service
 @AllArgsConstructor
 public class EmailService implements EmailSender {
 
